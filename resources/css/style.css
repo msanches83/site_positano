@@ -1,0 +1,677 @@
+/* ------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------- */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+	height: auto;
+	min-height: 100%;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* ----- HEADINGS -----*/
+
+.box {
+    padding: 1px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #ea127e;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+/* ----- PARAGRAPHS-----*/
+
+.destinos {
+    text-align: center;
+    line-height: 145%;
+    width: 80%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    text-align: justify;
+    padding: 10px;
+}
+
+.box-servicos p {
+    font-size: 80%;
+    line-height: 145%;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.box-icon {
+    width: auto;
+}
+
+/* ----- ICONS -----*/
+
+.icon-big {
+    font-size: 300%;
+    display: block;
+    color: #ea127e;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.icon-small {
+    font-size: 130%;
+    display: inline-block;
+    width: 30px;
+    color: #ea127e;
+    text-align: center;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+
+/* ----- LINKS -----*/
+
+a:link,
+a:visited {
+    color: #ea127e;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ea127e;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:active,
+a:hover {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
+/* ----- BUTTONS -----*/
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 20px;   
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;   
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #ea127e;
+    border: 1px solid #ea127e;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #ea127e;
+    color: #c3126a;
+    
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #c3126a;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #c3126a;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #c3126a;
+    color: #fff;
+}
+
+.btn-cotacao:active,
+.btn-cotacao:hover,
+.btn-cotacao:link,
+.btn-cotacao:visited {
+    border: 1px solid #ea127e !important;
+    color: #ea127e !important;
+    padding: 5px !important;
+    border-radius: 5px;
+}
+
+/* ------------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------------- */
+
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/positano3-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/positano3-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo-branco { 
+	display: none; 
+	height: 40px;
+    width: auto;
+    float: left;
+    margin: 10px 0;
+}
+
+/* Menu inicial*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 1px solid #ea127e;
+}
+
+.mobile-nav-icon {
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-nav-icon i {
+	font-size: 200%;
+	color: #fff;
+}
+
+/*Menu estatico*/
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(39, 39, 39, 0.8);
+	z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 15px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 10px 0;
+    color: #fff;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-branco { display: block; }
+
+
+
+/* ------------------------------------------------- */
+/* DESTINOS */
+/* ------------------------------------------------- */
+
+.section-grid {
+    padding: 0;
+}
+
+.grid-destinos {
+    list-style: none;
+    width: 100%;
+}
+
+.grid-destinos li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.destino-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.destino-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.destino-photo img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* ------------------------------------------------- */
+/* SERVICOS */
+/* ------------------------------------------------- */
+
+.section-servicos {    
+   background-color: #f4f4f4;
+}
+
+.nome-servicos p {
+    font-size: 90%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ion-android-plane:hover {
+    color: #dda6c1;
+}
+
+.ion-android-pin:hover {
+    color: #dda6c1;
+}
+
+.ion-android-bus:hover {
+    color: #dda6c1;
+}
+
+.ion-images:hover {
+    color: #dda6c1;
+}
+
+.ion-android-car:hover {
+    color: #dda6c1;
+}
+
+.ion-medkit:hover {
+    color: #dda6c1;
+}
+
+.ion-android-walk:hover {
+    color: #dda6c1;
+}
+
+.ion-pricetags:hover {
+    color: #dda6c1;
+}
+
+.ion-android-plane,
+.ion-android-pin,
+.ion-android-bus,
+.ion-images,
+.ion-android-car,
+.ion-medkit,
+.ion-android-walk,
+.ion-pricetags {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+
+.nome-servicos h3 {
+    background-color: #e8e8e8;
+}
+
+
+/* ------------------------------------------------- */
+/* FORM */
+/* ------------------------------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+form label{
+    font-size: 85%;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 85%;   
+    color: #555;
+}
+
+textarea {
+    height: 300px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0 ;
+}
+
+
+*:focus {outline: none}
+
+.dados p {
+    font-size: 90%;
+    margin: 8px;
+    margin-left: 0;
+    text-align: center;
+}
+
+.btn-enviar {
+	margin-right: 0 !important;
+}
+
+.row-enviar{
+	text-align: right;
+}
+
+.form-messages {
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.success { color: forestgreen; }
+
+.error { color: crimson; }
+
+/* ------------------------------------------------- */
+/* FOOTER */
+/* ------------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 80%
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li {
+    padding-bottom: 5px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+footer a:hover,
+footer a:active {
+    color: #ddd;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+}
+
+.social-links li a {
+    font-size: 150%;
+}
+
+.social-links li p.siga {
+    margin-top: 0;
+}
+
+
+.social-links ul p{
+    vertical-align: middle;
+}
+
+
+.footer-reserva {
+    float: left;
+    list-style: none;
+}
+
+.footer-reserva li p {
+    text-align: left;
+    font-size: 100%;
+    font-weight: 500;
+
+}
+
+.footer-reserva li {
+    margin-bottom: 5px;
+}
+
+.ion-social-facebook,
+.ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+
+/* ------------------------------------------------- */
+/* OPERADORAS */
+/* ------------------------------------------------- */
+
+.element {
+    height: 80px;
+    vertical-align: middle;
+}
+
+.imagem img{
+    height: 85%;
+}
+
+.destinos-operadoras p {
+    font-size: 90%;
+    text-align: center;
+}
+
+.destinos-agora {
+    margin-top: 50px;
+    font-size: 90%;
+    text-align: center
+}
+
+
+/* ------------------------------------------------- */
+/* SOBRE */
+/* ------------------------------------------------- */
+
+.sobre {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0, 0.8)), to(rgba(0,0,0, 0.8))), url(img/5-min.jpg);
+    background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url(img/5-min.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.destinos a:active,
+.destinos a:link,
+.destinos a:visited {
+    border-bottom: 0;
+}
+
+
+/* ------------------------------------------------- */
+/* COTAÇÃO */
+/* ------------------------------------------------- */
+
+.header-cotacao {
+    height: 130px;
+    background-image: none;
+    background-color: rgb(39, 39, 39); 
+}
+
+
+/* ------------------------------------------------- */
+/* ANIMATIONS */
+/* ------------------------------------------------- */
+
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4 {
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated {
+	opacity: 1;
+}

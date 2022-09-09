@@ -1,0 +1,121 @@
+/*Tablets grandes 1200px (largura menor que 1140px por linha)*/
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        position: absolute;
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row { padding: 0 2% }
+	.col { margin: 1% 0; }
+}
+.operadoras-menor { display: none;}
+
+
+/*Tablets pequenos e grandes de 768px a 1023px */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 40px 0; }
+    .sobre p { font-size: 14px; }
+    .icon-big { font-size: 200%; }
+    .operadoras-menor { display: none;}
+	
+	.main-nav { display: none; }
+	.mobile-nav-icon { display: inline-block; }
+	
+	.main-nav { 
+		float: left; 
+		margin-top: 25px;
+		margin-left: 25;
+		background-color: darkgrey;
+	}
+	
+	.main-nav li { display: block; }
+	
+	.main-nav li a:link,
+	.main-nav li a:visited {
+		display: block;
+		border: 0;
+		padding: 10px 0;
+		font-size: 100%;
+	}
+	
+	.btn-cotacao:active,
+	.btn-cotacao:hover,
+	.btn-cotacao:link,
+	.btn-cotacao:visited {
+		color: #fff !important;
+		padding: 10px 0 !important;
+		text-transform: uppercase !important;
+		font-size: 100% !important;
+		border: 0 !important;
+	}
+	
+	.sticky .main-nav { 
+		margin-top: 10px; 
+		margin-bottom: 10px;
+	}
+	
+	.sticky .main-nav li a:link,
+	.sticky .main-nav li a:visited { padding: 8px 0; }
+	.sticky .mobile-nav-icon { margin-top: 10px; }
+}
+
+
+/*Telefones e tablets pequenos 481px a 767px */
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+	.operadoras { display: none;}
+    .hero-text-box, .row { padding: 0 4% }
+    .col { width: 100%; }
+	
+	.operadoras-menor { display: block!important;}
+    /* .operadoras .col { width: auto !important; } */
+    .element { height: 60px; }
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+	.operadoras-menor .span-1-of-3 {
+		width: 32.26%; 
+		border-left: 0;
+	}
+}
+
+
+/*Celulares pequenos de 0 a 480px */
+@media only screen and (max-width: 480px) {
+    .logo { 
+        height: 70px; width: auto;
+        margin-left: 10px;
+    }
+    
+    .hero-text-box a { 
+        margin-bottom: 15px;
+        -ms-flex-line-pack: center;
+        align-content: center;
+    }
+    
+    .sobre img { 
+        width: 150px;
+        height: auto;
+        margin-top: 15px;
+    }
+    
+    .section-form div { margin-bottom: 5px;}
+    .footer-reserva { margin-top: 15px;}
+    .social-links { float: left;}
+    .social-links li { 
+        margin-bottom: 30px; 
+        margin-top: 15px;
+    }
+    .contact-form div { margin-bottom: 5px;}
+    .contact-form { width: 100%;}
+	.operadoras-menor .col { width: auto; }
+	.element { height: 65px; padding: 8px; }
+	.destinos {  margin-left: 10%;}
+	.operadoras-menor { display: block;}
+	.operadoras { display: none;}
+	.operadoras-menor .span-1-of-3 {
+		width: 32.26%; 
+	}
+}

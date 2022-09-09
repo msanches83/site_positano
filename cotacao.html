@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        
+		<title>Positano Viagens</title>
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+		<link rel="manifest" href="resources/favicons/site.webmanifest">
+		<link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="resources/favicons/favicon.ico">
+		<link rel="icon" href="resources/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2d89ef">
+		<meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		
+    </head>   
+    <body>
+        <header class="header-cotacao">
+            
+            <nav> 
+                <div class="row">
+                    <a href="index.html"><img src="resources/img/logo_novo2018_branco.png" alt="Positano logo" class="logo"></a>
+                    <ul class="main-nav">
+                        <li><a href="index.html#destino">DESTINOS</a></li>
+                        <li><a href="index.html#servicos">SERVIÇOS</a></li>
+                        <li><a href="index.html#sobre">SOBRE</a></li>
+                        <li><a href="index.html#contato">CONTATO</a></li>
+                    </ul>
+                </div>        
+            </nav>
+            
+        </header>
+        
+        <section class="section-cotacao">
+            <div class="row destinos">
+                <h2>MEU PACOTE PERSONALIZADO</h2>
+                <p>
+                    Para montarmos o seu pacote, precisamos de algumas informações para que ele fique do seu jeito. <br> Preencha a maior quantidade de campos abaixo que você conseguir com o maior detalhamento de informações possíveis e logo responderemos em seu e-mail com a cotação solicitada.<br><br>
+                </p>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Destino*</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="destino" id="destino" placeholder="Destino principal e cidades a serem visitadas" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Passageiros*</label>
+                        </div>
+                        <div class="col span-1-of-3">
+                            <select name="qtdeadt" id="qtdeadt">
+                                <option value="adultos" selected>Quantidade de Adultos</option>    
+                                <option value="0" >Nenhum</option>
+                                <option value="1">1 Adulto</option>
+                                <option value="2">2 Adultos</option>
+                                <option value="3">3 Adultos</option>
+                                <option value="4">4 Adultos</option>
+                                <option value="5">5 Adultos</option>
+                                <option value="6">6 Adultos</option>
+                                <option value="7">7 Adultos</option>
+                                <option value="8">8 Adultos</option>
+                                <option value="9">9 Adultos</option>
+                                <option value="acima9">10+ (Grupo)</option>
+                            </select>
+                        </div>
+                        <div class="col span-1-of-3">
+                            <select name="qtdechd" id="qtdechd">
+                                <option value="criancas" selected>Quantidade de Crianças</option>    
+                                <option value="0" >Nenhum</option>
+                                <option value="1">1 Criança</option>
+                                <option value="2">2 Crianças</option>
+                                <option value="3">3 Crianças</option>
+                                <option value="4">4 Crianças</option>
+                                <option value="5">5 Crianças</option>
+                                <option value="6">6 Crianças</option>
+                                <option value="7">7 Crianças</option>
+                                <option value="8">8 Crianças</option>
+                                <option value="9">9 Crianças</option>
+                                <option value="acima9">10+ (Grupo)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Data de ida e volta</label>
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input type="date" name="dataida" id="dataida" required>
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input type="date" name="datavolta" id="datavolta" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3"> </div>
+                        <div class="col span-1-of-3">
+                                <input type="checkbox" name="fexivel" id="flexivel"><label for="flexivel">Datas flexíveis</label>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Categoria do Hotel</label>
+                        </div>
+                        <div class="col span-1-of-3">
+                            <select name="hotel" id="hotel">
+                                <option value="">Escolha uma opção</option>    
+                                <option value="hostel">Hostel</option>    
+                                <option value="simples">Simples</option>    
+                                <option value="confortavel" >Confortável</option>
+                                <option value="luxo">Luxo</option>
+                                <option value="resort">Resort</option>
+                                <option value="cruzeiro">Cruzeiro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Opcionais?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="transfer" id="transfer" checked><label for="transfer">Transfer In/Out</label>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3"> </div>
+                            <div class="col span-2-of-3">
+                                <input type="checkbox" name="seguro" id="seguro" checked><label for="seguro">Seguro</label>
+                            </div>    
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3"> </div>
+                            <div class="col span-2-of-3">
+                                <input type="checkbox" name="passeio" id="passeio"><label for="passeio">Passeios</label>
+                            </div>    
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3"> </div>
+                            <div class="col span-2-of-3">
+                                <input type="checkbox" name="ingresso" id="ingresso"><label for="ingresso">Ingressos</label>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Mensagem</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Escreva aqui todos os detalhes da sua viagem que não constam nos campos acima"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Nome*</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Seu nome" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">E-mail*</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="telefone">Telefone</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="telefone" id="telefone" placeholder="Seu telefone">
+                        </div>
+                    </div>
+                    <div class="row row-enviar">
+						<input type="submit" value="Enviar" class="btn-enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+		
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-5">
+                    <ul class="footer-nav">
+                        <li><a href="#">Destinos</a>
+                        <li><a href="#">Serviços</a>
+                        <li><a href="#">Informações</a>
+                        <li><a href="#">Sobre</a>
+                        <li><a href="#">Solicitar cotação</a>
+                    </ul>
+                </div>
+                <div class="col span-1-of-5">
+                    <ul class="footer-reserva">
+                        <li><p>Reserve agora:</p>
+                        <li><a href="http://www.positanoviagens.com.br/bestday/">Best Day</a>
+                        <li><a href="https://www.booking.com/?aid=1307998">Booking</a>
+                        <li><a href="http://www.positanoviagens.com.br/decolar/">Decolar</a>
+                    </ul>
+                </div>
+                <div class="col span-3-of-5">
+                    <ul class="social-links">
+                        <li><p class="siga">Siga-nos: </p></li>
+                        <li><a href="https://www.facebook.com/positanoviagens/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/positanoviagens/"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 by Marjorie Sanches. All rights reserved.
+                </p>
+            </div>
+        </footer>
+		
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+		<script src="vendors/js/jquery.waypoints.min.js"></script>
+		<script src="resources/js/script.js"></script>
+		
+	</body>  
+ </html>    
+
+
