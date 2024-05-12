@@ -50,7 +50,7 @@
                 </p>
             </div>
             <div class="row">
-                <form method="post" action="#" class="contact-form">
+                <form method="post" action="sendForm.php" class="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3">
                             <label>Destino*</label>
@@ -64,8 +64,8 @@
                             <label>Passageiros*</label>
                         </div>
                         <div class="col span-1-of-3">
-                            <select name="qtdeadt" id="qtdeadt">
-                                <option value="adultos" selected>Quantidade de Adultos</option>    
+                            <select name="qtdeadt" id="qtdeadt" required>
+                                <option value="" selected>Quantidade de Adultos</option>    
                                 <option value="0" >Nenhum</option>
                                 <option value="1">1 Adulto</option>
                                 <option value="2">2 Adultos</option>
@@ -80,8 +80,8 @@
                             </select>
                         </div>
                         <div class="col span-1-of-3">
-                            <select name="qtdechd" id="qtdechd">
-                                <option value="criancas" selected>Quantidade de Crianças</option>    
+                            <select name="qtdechd" id="qtdechd" required>
+                                <option value="" selected>Quantidade de Crianças</option>    
                                 <option value="0" >Nenhum</option>
                                 <option value="1">1 Criança</option>
                                 <option value="2">2 Crianças</option>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label>Data de ida e volta</label>
+                            <label>Data de ida e volta*</label>
                         </div>
                         <div class="col span-1-of-3">
                             <input type="date" name="dataida" id="dataida" required>
@@ -198,11 +198,11 @@
             <div class="row">
                 <div class="col span-1-of-5">
                     <ul class="footer-nav">
-                        <li><a href="#">Destinos</a>
-                        <li><a href="#">Serviços</a>
-                        <li><a href="#">Informações</a>
-                        <li><a href="#">Sobre</a>
-                        <li><a href="#">Solicitar cotação</a>
+                        <li><a href="index.html#destino">Destinos</a>
+                        <li><a href="index.html#servicos">Serviços</a>
+                        <li><a href="index.html#sobre">Sobre</a>
+                        <li><a href="index.html#contato">Contato</a>
+                        <li><a href="cotacao.html">Solicitar cotação</a>
                     </ul>
                 </div>
                 <div class="col span-1-of-5">

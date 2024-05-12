@@ -472,22 +472,22 @@
                     <h3>POSITANO VIAGENS</h3>
                     <p><b>CNPJ:</b> 19.194.655/0001-76</p>
                     <p><b>E-mail:</b> marjorie@positanoviagens.com.br</p>
-                    <p><b>Telefones:</b> (11) 99560-3503 Vivo (WhatsApp)</p>
-                    <p>(11) 94872-2022 Tim</p>           
+                    <p><b>Telefones:</b> (11) 91234-5678 Vivo (WhatsApp)</p>          
                 </div>
                 
                 <div class="col span-3-of-5">
-                    <form method="post" action="#" id="form">
+                    <form method="post" action="sendContact.php" id="form">
                        <div class="row">
-						   
-						   <?php
-							<div class="form-messages success">
-								Obrigada! Sua mensagem foi enviada com sucesso.
-							</div>
-						   <div class="form-messages error">
-								Ops! Houve um erro e sua mensagem não foi enviada. Por favor, tente novamente!
-							</div>
-						   ?>
+						  
+						   <!-- <?php
+							   if ($_GET['success'] == 1) {
+								   echo "<div class=\"form-messages success\">Obrigada! Sua mensagem foi enviada com sucesso.</div>";
+							   }
+
+							   if ($_GET['success'] == -1) {
+								   echo "<div class=\"form-messages error\">Ops! Houve um erro e sua mensagem não foi enviada. Por favor, tente novamente!</div>";
+							   }
+                            -->
 						   
 						</div>
 						<div class="row">			
@@ -547,11 +547,11 @@
             <div class="row">
                 <div class="col span-1-of-5">
                     <ul class="footer-nav">
-                        <li><a href="#">Destinos</a>
-                        <li><a href="#">Serviços</a>
-                        <li><a href="#">Informações</a>
-                        <li><a href="#">Sobre</a>
-                        <li><a href="#">Solicitar cotação</a>
+                        <li><a href="#destino">Destinos</a>
+                        <li><a href="#servicos">Serviços</a>
+                        <li><a href="#sobre">Sobre</a>
+                        <li><a href="#contato">Contato</a>
+                        <li><a href="cotacao.html">Solicitar cotação</a>
                     </ul>
                 </div>
                 <div class="col span-1-of-5">
